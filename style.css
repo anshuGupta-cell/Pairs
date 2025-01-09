@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100svh;
+  background: #AAAFFA;
+  font-family: poppins;
+  font-weight: 0,400;
+}
+
+main {
+  display: grid;
+  min-height: 90svh;
+}
+
+:root {
+  --cells: 16;
+  --gap: 1rem;
+
+}
+
+.level {
+  padding: var(--gap);
+  text-align: center;
+}
+.select-cells-no{
+  border: none;
+  background: #A47FFF;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.2rem;
+  outline: #2D00A7;
+  color: #2D00A7;
+}
+.container {
+  height: 90vmin;
+  width: 90vmin;
+  margin: auto;
+  background: #8680D3;
+  border-radius: 3px;
+  display: grid;
+  gap: 5px;
+  padding: var(--gap);
+}
+
+.features {
+  height: 3rem;
+  align-content: center;
+  text-align: center;
+  gap: var(--gap);
+}
+
+button {
+  margin: auto;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 1rem;
+  background: #A47FFF;
+  color: #2D00A7;
+  cursor: pointer;
+}
+
+button:hover {
+  font-size: 0.8rem;
+}
+
+/*       modal.     */
+.modal {
+  position: absolute;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  background: #E8EAFF;
+  padding: 2rem 2rem;
+  border-radius: 0.5em;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal ul {
+  text-align: center;
+}
+.wAtt{
+  color: #2D00A7;
+}
+.trophy {
+  width: 4rem;
+}
+.timeCont{
+  display: flex;
+  gap: 0.4rem;
+}
+.timeCont ul{
+  color: #2D00A7;
+}
+
+.reset-modal {
+  position: absolute;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  background: #E8EAFF;
+  padding: 2rem 2rem;
+  border-radius: 0.5em;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.reset-modal ul h3{
+  padding: 1rem 0;
+}
+.reset-modal ul{
+  text-align: center;
+}
+
+
+/*      cards and images.   */
+.card {
+  display: grid;
+  place-items: center;
+  background: ghostwhite;
+  border-radius: inherit;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0.3em;
+  perspective: 100rem;
+  transform: rotateY(180deg);
+  transition: transform 0.5s 0.5s linear;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  border-radius: inherit;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transition: transform 0.5s 0.5s linear;
+  backface-visibility: hidden;
+}
+
+.card.change img {
+  transform: rotateY(0deg);
+  transition: transform 0.5s linear;
+}
+
+.pause {
+  pointer-events: none;
+}
+
+.card.stop {
+  pointer-events: none;
+}
+
+.card.change {
+  pointer-events: none;
+  transform: rotateY(0deg);
+  transition: transform 0.5s linear;
+}
+
+.bottom {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.timer{
+  color: #2D00A7;
+}
+.btn-width {
+  display: grid;
+  place-items: center;
+  width: 8rem;
+}

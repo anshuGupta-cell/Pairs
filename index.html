@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Pairs Game - Test Your Memory and Match Skills</title>
+<meta name="description" content="Play the Pairs game with various difficulty levels. Match pairs of cards and track your progress with time and attempts. Enjoy a fun challenge!">
+  <link rel="icon" href="logo/logo.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer type="module"></script>
+
+</head>
+
+<body>
+
+  <main>
+    <div class="level">
+      <select name="" id="" class="select-cells-no">
+        <option value="16" selected>16</option>
+        <option value="36">36</option>
+        <option value="64">64</option>
+      </select>
+    </div>
+
+    <div class="container play-ground">
+
+    </div>
+
+    <div class="modal">
+      <ul>
+        <img class="trophy" src="svg/trophy.png" alt="">
+      </ul>
+      <ul>
+        <h2>You Win</h2>
+      </ul>
+      <ul class="timeCont">
+        <p>Time Span:</p> <ul class="modal-time">
+        </ul>
+      </ul>
+      <ul>
+        WRONG ATTEMPTS: <span class="wAtt">5</span>
+      </ul>
+      <ul class="features">
+        <button class="new-game">New Game</button>
+      </ul>
+    </div>
+    <section class="reset-modal">
+      <ul>
+        <h3>Do you want to quit the game?</h3>
+        <button class="cancel">Cancel</button>
+        <button class="yes">Yes</button>
+      </ul>
+    </section>
+
+    <section class="bottom">
+      <ul class="timer">
+        <span>00</span>min <span>00</span>sec
+      </ul>
+      <ul class="btn-width">
+        <button class="reset">New Game</button>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
